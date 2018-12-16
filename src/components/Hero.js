@@ -1,11 +1,12 @@
 import React from 'react'
+import topPic from '../images/top-pic.jpg'
 
 export default function Hero() {
   return (
     <div style={imageStyle}>
         <h1 style={textStyle('8rem', '8rem')}>Hi, I'm Csabi</h1>
-        <h3 style={textStyle('15px', '2rem')}>I'm a Front End Developer</h3>
-        <button type="button" className="btn btn-primary" style={buttonStyle}>Check out My Portfolio</button>
+        <h3 style={textStyle('15px', '2rem')}>I'm a Front End Developer /> React Fan /> Mobile developer geek />.</h3>
+        <button type="button" className="btn btn-primary" style={buttonStyle}><b>Check out My Portfolio</b></button>
     </div>
   )
 }
@@ -40,8 +41,6 @@ const buttonStyle = {
   backgroundColor:'#ff6080',
   color: 'white',
   border: 'none',
-  '&:hover': {
-    textDecoration: 'underline',
-},       
+  boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'    
 
 }

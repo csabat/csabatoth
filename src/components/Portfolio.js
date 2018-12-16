@@ -1,22 +1,21 @@
 import React from 'react'
 import Card from './Card';
-import indecision from '../images/indecision.png'
-import clientManager from '../images/managerapp.png'
-import contactManager from '../images/contactmanager.png'
+import {portfolio} from '../meta-data/portfolio'
 
-export default function Portfolio() {
+export default (props) => {
+    const {indecision, clientManager, contactManager} = portfolio
     return (
         <div style={style} className="container">
             <h1>Portfolio</h1>
             <div className="row">
                 <div className="col-sm">
-                    <Card src={indecision} title="Indecision App" body="Simple React App helping you what to do whenever you have to many things."/>
+                    <Card src={indecision.src} name={indecision.name} description={indecision.description} live={indecision.live} url={indecision.url} github={indecision.github}/>
                 </div>
                 <div className="col-sm">
-                    <Card src={clientManager} title="Client Manager" body="React App manages your clients bills, so you will be able to keep on track on your financial traffic."/>
+                <Card src={clientManager.src} name={clientManager.name} description={clientManager.description} live={clientManager.live} url={clientManager.url} github={clientManager.github}/>
                 </div>
                 <div className="col-sm">
-                    <Card src={contactManager} title="Contact Manager" body="Easy contact manager application built with React designed with bootstrap."/>
+                <Card src={contactManager.src} name={contactManager.name} description={contactManager.description} live={contactManager.live} url={contactManager.url} github={contactManager.github}/>
                 </div>
             </div>
         </div>
@@ -26,4 +25,9 @@ export default function Portfolio() {
 const style = {
     textAlign: 'center',
     padding: '3rem',
+    
+}
+
+const cardStyle = {
+    boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'
 }
