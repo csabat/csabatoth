@@ -5,10 +5,10 @@ export default function Education() {
   return (
     <div style={style}>
       <h1>Education</h1>
-      <img src={reactPic} />
+      <img href="https://reactjs.academy" src={reactPic} />
       <h4>1 week React Bootcamp - London</h4>
       <p>I had a chance to join the bootcamp at the 2nd of december, 2018. 7 days intense, full time bootcamp mastering best practices and design patterns in React. The curriculum go through from the basics until the most advanced and latest topics. For more details please click on the link below.</p>
-      <a href="https://reactjs.academy">Click</a>
+      
 
     </div>
   )

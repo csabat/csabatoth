@@ -12,7 +12,7 @@ export default function Hero() {
 }
 
 const imageStyle = {
-  backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1529465230221-a0d10e46fcbb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80)',
+  backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(' + topPic + ')',
   width: '100%',
   height: '40rem',
   margin: 0,
@@ -35,7 +35,8 @@ const textStyle = (padding, fontsize) => ({
 })
 
 const buttonStyle = {
-  padding: '12px',
+  fontSize: '26px',
+  padding: '16px',
   marginBottom: '3rem',
   marginTop: '2rem',
   backgroundColor:'#ff6080',
