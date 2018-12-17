@@ -1,12 +1,12 @@
 import React from 'react'
 import topPic from '../images/top-pic.jpg'
 
-export default function Hero() {
+export default function Hero(props) {
   return (
     <div style={imageStyle}>
         <h1 style={textStyle('8rem', '8rem')}>Hi, I'm Csabi</h1>
         <h3 style={textStyle('15px', '2rem')}>I'm a Front End Developer /> React Fan /> Mobile developer geek />.</h3>
-        <button type="button" className="btn btn-primary" style={buttonStyle}><b>Check out My Portfolio</b></button>
+        <button type="button" onClick={props.buttonAction} className="btn btn-primary" style={buttonStyle}><b>Check out My Portfolio</b></button>
     </div>
   )
 }
