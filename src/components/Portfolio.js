@@ -2,7 +2,11 @@ import React from 'react'
 import Card from './Card';
 import {portfolio} from '../meta-data/portfolio'
 
-export default (props) => {
+ class Portfolio extends React.Component {
+ 
+    
+ 
+ render() {
     const {indecision, clientManager, contactManager} = portfolio
     return (
         <div style={style} className="container">
@@ -22,6 +26,7 @@ export default (props) => {
     )
 }
 
+}
 const style = {
     textAlign: 'center',
     padding: '3rem',
@@ -31,3 +36,5 @@ const style = {
 const cardStyle = {
     boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'
 }
+
+export default Portfolio;
