@@ -43,5 +43,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  },
+  "browser": {
+    "raf": "component-raf",
+    "tween": "component-tween"
   }
 }
