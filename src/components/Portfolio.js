@@ -2,14 +2,11 @@ import React from 'react'
 import Card from './Card';
 import {portfolio} from '../meta-data/portfolio'
 
- class Portfolio extends React.Component {
- 
-    
- 
- render() {
+ const Portfolio = React.forwardRef((props, ref)=> {
+
     const {indecision, clientManager, contactManager} = portfolio
     return (
-        <div style={style} className="container">
+        <div ref={ref} style={style} className="container">
             <h1>Portfolio</h1>
             <div className="row">
                 <div className="col-sm">
@@ -24,13 +21,12 @@ import {portfolio} from '../meta-data/portfolio'
             </div>
         </div>
     )
-}
 
-}
+});
+
 const style = {
     textAlign: 'center',
-    padding: '3rem',
-    
+    padding: '3rem'
 }
 
 const cardStyle = {
